@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@300;400;500;600&family=Rubik+Wet+Paint&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+  
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.dynapuff-newfont {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.playwrite-gb-s-newfont {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+  
+
+@layer components{
+  .primary-btn{
+      @apply bg-primary text-white font-bold px-4 py-2 rounded-full ;
+  }
+  .secondary-btn{
+      @apply bg-secondary text-black font-bold px-4 py-2 rounded-full ;
+  }
+}
+
+
+@layer utilities{
+  .img-shadow{
+      filter:drop-shadow(15px 20px 20px rgba(0,0,0,0.8));
+  }
+}
