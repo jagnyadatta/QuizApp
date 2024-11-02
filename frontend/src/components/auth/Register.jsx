@@ -7,6 +7,7 @@ const Register = () => {
   const [input, setInput] = useState({
     fullname: "",
     email: "",
+    phoneNumber:"",
     password: "",
   });
   const changeEventHandler = (e) => {
@@ -36,6 +37,15 @@ const Register = () => {
               type="email"
               value={input.email}
               name="email"
+              onChange={changeEventHandler}
+            />
+            <label className="text-lg font-medium">Phone:</label>
+            <input
+              className="w-full border-2 focus:border-blue-600 rounded-md py-1 px-2 outline-none"
+              placeholder="abcd123@gmail.com"
+              type="number"
+              value={input.phoneNumber}
+              name="phoneNumber"
               onChange={changeEventHandler}
             />
             <br />
