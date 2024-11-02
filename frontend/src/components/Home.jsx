@@ -11,7 +11,7 @@ const Home = () => {
       <div className='relative min-h-screen'>
       <div className="absolute inset-0 bg-blue-100 backdrop-blur-md"></div>
         <div className="relative">
-          <Navbar />
+          <Navbar/>
           <Hero/>
           <Terms/>
           <Footer/>
