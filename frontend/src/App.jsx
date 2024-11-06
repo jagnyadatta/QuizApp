@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
+import Profile from './components/Profile'
 
 const appRouter = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const appRouter = createBrowserRouter([
   {
     path:"/login",
     element: <Login/>
+  },
+  {
+    path:"/profile",
+    element: <Profile/>
   },
 ])
 

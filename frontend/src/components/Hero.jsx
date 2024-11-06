@@ -15,6 +15,7 @@ const Hero = () => {
                 <div className='flex pt-5 gap-3 items-center md:justify-start justify-center'>
                     <button onClick={()=> navigate("/register")} className='primary-btn hover:scale-110 duration-200'>Register</button>
                     <button onClick={()=> navigate("/login")} className='secondary-btn hover:scale-110 duration-200'>Login</button>
+                    <button onClick={()=> navigate("/profile")} className='primary-btn hover:scale-110 duration-200'>Profile</button>
                 </div>
             </div>
             {/* image section */}
