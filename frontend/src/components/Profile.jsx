@@ -31,7 +31,7 @@ const Profile = () => {
             knowledge can take you!
           </p>
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/playground")}
             className="primary-btn bg-blue-600 rounded-lg hover:scale-110 duration-200"
           >
             Let's Play

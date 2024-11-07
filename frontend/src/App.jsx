@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import Profile from './components/Profile'
+import QuizePage from './components/QuizePage'
 
 const appRouter = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const appRouter = createBrowserRouter([
   {
     path:"/profile",
     element: <Profile/>
+  },
+  {
+    path:"/playground",
+    element: <QuizePage/>
   },
 ])
 
