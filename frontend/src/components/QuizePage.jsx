@@ -3,12 +3,9 @@ import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
 
 const QuizePage = () => {
-  // Sample state for question, options, and score tracking
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [score, setScore] = useState(0);
   const totalQuestions = 20;
-
-  // Dummy data
   const questions = [
     {
       question: "What is the capital of France?",
@@ -20,11 +17,9 @@ const QuizePage = () => {
       options: ["Berlin", "Madrid", "Paris", "Rome"],
       correctOption: "Berlin",
     },
-    // Add more questions as needed
   ];
 
   const handleOptionSelect = (option) => {
-    // Logic to handle option selection and scoring
     if (option === questions[currentQuestion - 1].correctOption) {
       setScore(score + 1);
     }
